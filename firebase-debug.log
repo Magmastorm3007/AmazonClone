@@ -1,0 +1,411 @@
+[debug] [2022-06-26T14:06:50.137Z] ----------------------------------------------------------------------
+[debug] [2022-06-26T14:06:50.140Z] Command:       D:\WebDProjects\Node\node.exe C:\Users\shash\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2022-06-26T14:06:50.141Z] CLI Version:   11.1.0
+[debug] [2022-06-26T14:06:50.141Z] Platform:      win32
+[debug] [2022-06-26T14:06:50.142Z] Node Version:  v18.4.0
+[debug] [2022-06-26T14:06:50.145Z] Time:          Sun Jun 26 2022 19:36:50 GMT+0530 (India Standard Time)
+[debug] [2022-06-26T14:06:50.146Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-06-26T14:06:50.276Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-06-26T14:06:50.277Z] > authorizing via signed-in user (shashwatnath3007@gmail.com)
+[info] i  emulators: Starting emulators: functions, hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions, hosting"}}
+[warn] !  emulators: It seems that you are running multiple instances of the emulator suite for project clone-298ba. This may result in unexpected behavior. 
+[debug] [2022-06-26T14:06:50.504Z] [hub] writing locator at C:\Users\shash\AppData\Local\Temp\hub-clone-298ba.json
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, pubsub, storage\u001b[22m"}}
+[warn] !  Your requested "node" version "16" doesn't match your global version "18". Using node@18 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Your requested \"node\" version \"16\" doesn't match your global version \"18\". Using node@18 from host."}}
+[debug] [2022-06-26T14:06:50.648Z] defaultcredentials: writing to file C:\Users\shash\AppData\Roaming\firebase\shashwatnath3007_gmail_com_application_default_credentials.json
+[debug] [2022-06-26T14:06:50.652Z] Setting GAC to C:\Users\shash\AppData\Roaming\firebase\shashwatnath3007_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\shash\\AppData\\Roaming\\firebase\\shashwatnath3007_gmail_com_application_default_credentials.json"}}
+[debug] [2022-06-26T14:06:50.659Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-298ba/adminSdkConfig [none]
+[debug] [2022-06-26T14:06:51.465Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-298ba/adminSdkConfig 200
+[debug] [2022-06-26T14:06:51.466Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-298ba/adminSdkConfig {"projectId":"clone-298ba","storageBucket":"clone-298ba.appspot.com"}
+[debug] [2022-06-26T14:06:51.512Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/clone-298ba/sites 
+[debug] [2022-06-26T14:06:53.771Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/clone-298ba/sites 200
+[debug] [2022-06-26T14:06:53.771Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/clone-298ba/sites {"sites":[{"name":"projects/clone-298ba/sites/clone-298ba","defaultUrl":"https://clone-298ba.web.app","appId":"1:1084891120970:web:28628e7233381b3f476db3","type":"DEFAULT_SITE"}]}
+[debug] [2022-06-26T14:06:53.772Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-298ba/webApps/1:1084891120970:web:28628e7233381b3f476db3/config [none]
+[debug] [2022-06-26T14:06:55.347Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-298ba/webApps/1:1084891120970:web:28628e7233381b3f476db3/config 200
+[debug] [2022-06-26T14:06:55.348Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-298ba/webApps/1:1084891120970:web:28628e7233381b3f476db3/config {"projectId":"clone-298ba","appId":"1:1084891120970:web:28628e7233381b3f476db3","storageBucket":"clone-298ba.appspot.com","apiKey":"AIzaSyAuotxk4GqQGF7mus8Vnw6xKDg6-H9pgwE","authDomain":"clone-298ba.firebaseapp.com","messagingSenderId":"1084891120970","measurementId":"G-QS9DJYPEN9"}
+[info] i  hosting: Serving hosting files from: build {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mbuild\u001b[22m"}}
+[info] +  hosting: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[warn] !  ui: Emulator UI unable to start on port 4000, starting on 4004 instead. {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI unable to start on port 4000, starting on 4004 instead."}}
+[debug] [2022-06-26T14:06:55.513Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-06-26T14:06:55.514Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-06-26T14:06:55.514Z] Starting Emulator UI with command {"binary":"node","args":["--dns-result-order=ipv4first","C:\\Users\\shash\\.cache\\firebase\\emulators\\ui-v1.7.0\\server.bundle.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"--dns-result-order=ipv4first\",\"C:\\\\Users\\\\shash\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.7.0\\\\server.bundle.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2022-06-26T14:06:55.790Z] Web / API server started at localhost:4004
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at localhost:4004\n"}}
+[info] i  functions: Watching "D:\WebDProjects\ReactPractise\RadhaPublicationsWebApp\amazon-clone\amazon-clone\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"D:\\WebDProjects\\ReactPractise\\RadhaPublicationsWebApp\\amazon-clone\\amazon-clone\\functions\" for Cloud Functions..."}}
+[debug] [2022-06-26T14:06:55.824Z] Validating nodejs source
+[debug] [2022-06-26T14:07:03.315Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^9.10.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-06-26T14:07:03.316Z] Building nodejs source
+[debug] [2022-06-26T14:07:03.316Z] Analyzing nodejs backend spec
+[debug] [2022-06-26T14:07:03.321Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-06-26T14:07:04.018Z] Serving at port 9005
+
+[debug] [2022-06-26T14:07:04.402Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-06-26T14:07:04.419Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions[us-central1-api]: http function initialized (http://localhost:5001/clone-298ba/us-central1/api). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://localhost:5001/clone-298ba/us-central1/api)."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://localhost:4004                │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ localhost:5001 │ http://localhost:4004/functions │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Hosting   │ localhost:5000 │ n/a                             │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at localhost:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2022-06-26T14:09:08.693Z] Functions emulator received unknown request at path /clone-5773d/us-central1/api/payments/create
+[debug] [2022-06-26T14:09:08.710Z] Functions emulator received unknown request at path /clone-5773d/us-central1/api/payments/create
+[debug] [2022-06-26T14:10:37.515Z] Functions emulator received unknown request at path /clone-5773d/us-central1/api/payments/create
+[debug] [2022-06-26T14:10:37.519Z] Functions emulator received unknown request at path /clone-5773d/us-central1/api/payments/create
+[debug] [2022-06-26T14:16:03.720Z] Functions emulator received unknown request at path /clone-5773d/us-central1/ap/payments/create
+[debug] [2022-06-26T14:16:22.400Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-06-26T14:16:22.401Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-06-26T14:16:22.403Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-06-26T14:16:26.405Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-06-26T14:16:26.406Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-06-26T14:16:26.406Z] Accepted request POST /clone-298ba/us-central1/api/payments/create?total=71700 --> us-central1-api
+[debug] [2022-06-26T14:16:26.429Z] [worker-pool] addWorker(us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-api)"}}
+[debug] [2022-06-26T14:16:26.430Z] [worker-pool] Adding worker with key us-central1-api, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-api, total=1"}}
+[debug] [2022-06-26T14:16:26.430Z] [worker-pool] submitWork(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-api)"}}
+[debug] [2022-06-26T14:16:26.431Z] [worker-us-central1-api-dba1a3d2-17be-4333-81fb-7d6abd00b44b]: Assigning socketPath: \\?\pipe\D:\WebDProjects\ReactPractise\RadhaPublicationsWebApp\amazon-clone\amazon-clone\functions\4880 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-dba1a3d2-17be-4333-81fb-7d6abd00b44b]: Assigning socketPath: \\\\?\\pipe\\D:\\WebDProjects\\ReactPractise\\RadhaPublicationsWebApp\\amazon-clone\\amazon-clone\\functions\\4880"}}
+[debug] [2022-06-26T14:16:26.432Z] [worker-us-central1-api-dba1a3d2-17be-4333-81fb-7d6abd00b44b]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-dba1a3d2-17be-4333-81fb-7d6abd00b44b]: BUSY"}}
+[debug] [2022-06-26T14:16:32.074Z] [runtime-status] [4880] Functions runtime initialized. {"cwd":"D:\\WebDProjects\\ReactPractise\\RadhaPublicationsWebApp\\amazon-clone\\amazon-clone\\functions","node_version":"18.4.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [4880] Functions runtime initialized. {\"cwd\":\"D:\\\\WebDProjects\\\\ReactPractise\\\\RadhaPublicationsWebApp\\\\amazon-clone\\\\amazon-clone\\\\functions\",\"node_version\":\"18.4.0\"}"}}
+[debug] [2022-06-26T14:16:32.075Z] [runtime-status] [4880] Disabled runtime features: undefined {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [4880] Disabled runtime features: undefined"}}
+[debug] [2022-06-26T14:16:32.085Z] [runtime-status] [4880] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"D:\\WebDProjects\\ReactPractise\\RadhaPublicationsWebApp\\amazon-clone\\amazon-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [4880] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"D:\\\\WebDProjects\\\\ReactPractise\\\\RadhaPublicationsWebApp\\\\amazon-clone\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2022-06-26T14:16:32.091Z] [runtime-status] [4880] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.21.2","resolution":"D:\\WebDProjects\\ReactPractise\\RadhaPublicationsWebApp\\amazon-clone\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [4880] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.21.2\",\"resolution\":\"D:\\\\WebDProjects\\\\ReactPractise\\\\RadhaPublicationsWebApp\\\\amazon-clone\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-06-26T14:16:32.092Z] [runtime-status] [4880] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [4880] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-06-26T14:16:32.095Z] [runtime-status] [4880] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.21.2","resolution":"D:\\WebDProjects\\ReactPractise\\RadhaPublicationsWebApp\\amazon-clone\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [4880] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.21.2\",\"resolution\":\"D:\\\\WebDProjects\\\\ReactPractise\\\\RadhaPublicationsWebApp\\\\amazon-clone\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-06-26T14:16:32.249Z] [runtime-status] [4880] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [4880] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-06-26T14:16:32.250Z] [runtime-status] [4880] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.21.2","resolution":"D:\\WebDProjects\\ReactPractise\\RadhaPublicationsWebApp\\amazon-clone\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [4880] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.21.2\",\"resolution\":\"D:\\\\WebDProjects\\\\ReactPractise\\\\RadhaPublicationsWebApp\\\\amazon-clone\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}}"}}
+[debug] [2022-06-26T14:16:32.253Z] [runtime-status] [4880] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.21.2","resolution":"D:\\WebDProjects\\ReactPractise\\RadhaPublicationsWebApp\\amazon-clone\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [4880] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.21.2\",\"resolution\":\"D:\\\\WebDProjects\\\\ReactPractise\\\\RadhaPublicationsWebApp\\\\amazon-clone\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-06-26T14:16:32.259Z] [runtime-status] [4880] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"D:\\WebDProjects\\ReactPractise\\RadhaPublicationsWebApp\\amazon-clone\\amazon-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [4880] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"D:\\\\WebDProjects\\\\ReactPractise\\\\RadhaPublicationsWebApp\\\\amazon-clone\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2022-06-26T14:16:32.261Z] [runtime-status] [4880] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.21.2","resolution":"D:\\WebDProjects\\ReactPractise\\RadhaPublicationsWebApp\\amazon-clone\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [4880] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.21.2\",\"resolution\":\"D:\\\\WebDProjects\\\\ReactPractise\\\\RadhaPublicationsWebApp\\\\amazon-clone\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-06-26T14:16:32.262Z] [runtime-status] [4880] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"D:\\WebDProjects\\ReactPractise\\RadhaPublicationsWebApp\\amazon-clone\\amazon-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [4880] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"D:\\\\WebDProjects\\\\ReactPractise\\\\RadhaPublicationsWebApp\\\\amazon-clone\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2022-06-26T14:16:32.933Z] [runtime-status] [4880] Beginning invocation function api! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [4880] Beginning invocation function api!"}}
+[info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"api\""}}
+[debug] [2022-06-26T14:16:32.936Z] [runtime-status] [4880] Running api in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [4880] Running api in signature http"}}
+[debug] [2022-06-26T14:16:32.943Z] [runtime-status] [4880] Attempting to listen to socketPath: \\?\pipe\D:\WebDProjects\ReactPractise\RadhaPublicationsWebApp\amazon-clone\amazon-clone\functions\4880 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [4880] Attempting to listen to socketPath: \\\\?\\pipe\\D:\\WebDProjects\\ReactPractise\\RadhaPublicationsWebApp\\amazon-clone\\amazon-clone\\functions\\4880"}}
+[debug] [2022-06-26T14:16:32.960Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-06-26T14:16:32.961Z] [functions] Got req.url=/clone-298ba/us-central1/api/payments/create?total=71700, mapping to path=/payments/create?total=71700 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/clone-298ba/us-central1/api/payments/create?total=71700, mapping to path=/payments/create?total=71700"}}
+[debug] [2022-06-26T14:16:32.974Z] [runtime-status] [4880] Ephemeral server handling POST request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [4880] Ephemeral server handling POST request"}}
+[info] >  Payment Request Recieved BOOM!!! for this amount>>> 71700 {"user":"Payment Request Recieved BOOM!!! for this amount>>> 71700","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m Payment Request Recieved BOOM!!! for this amount>>> 71700"}}
+[debug] [2022-06-26T14:16:32.999Z] [runtime-status] [4880] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [4880] Ephemeral server survived."}}
+[info] i  functions: Finished "api" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"api\" in ~1s"}}
+[debug] [2022-06-26T14:16:34.778Z] [worker-us-central1-api-dba1a3d2-17be-4333-81fb-7d6abd00b44b]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-dba1a3d2-17be-4333-81fb-7d6abd00b44b]: IDLE"}}
+[debug] [2022-06-26T14:16:34.779Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-06-26T14:16:38.360Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-06-26T14:16:38.361Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-06-26T14:16:38.361Z] Accepted request POST /clone-298ba/us-central1/api/payments/create?total=71700 --> us-central1-api
+[debug] [2022-06-26T14:16:38.362Z] [worker-pool] submitWork(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-api)"}}
+[debug] [2022-06-26T14:16:38.362Z] [worker-us-central1-api-dba1a3d2-17be-4333-81fb-7d6abd00b44b]: Assigning socketPath: \\?\pipe\D:\WebDProjects\ReactPractise\RadhaPublicationsWebApp\amazon-clone\amazon-clone\functions\4880 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-dba1a3d2-17be-4333-81fb-7d6abd00b44b]: Assigning socketPath: \\\\?\\pipe\\D:\\WebDProjects\\ReactPractise\\RadhaPublicationsWebApp\\amazon-clone\\amazon-clone\\functions\\4880"}}
+[debug] [2022-06-26T14:16:38.363Z] [worker-us-central1-api-dba1a3d2-17be-4333-81fb-7d6abd00b44b]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-dba1a3d2-17be-4333-81fb-7d6abd00b44b]: BUSY"}}
+[debug] [2022-06-26T14:16:38.365Z] [runtime-status] [4880] Beginning invocation function api! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [4880] Beginning invocation function api!"}}
+[info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"api\""}}
+[debug] [2022-06-26T14:16:38.370Z] [runtime-status] [4880] Running api in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [4880] Running api in signature http"}}
+[debug] [2022-06-26T14:16:38.372Z] [runtime-status] [4880] Attempting to listen to socketPath: \\?\pipe\D:\WebDProjects\ReactPractise\RadhaPublicationsWebApp\amazon-clone\amazon-clone\functions\4880 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [4880] Attempting to listen to socketPath: \\\\?\\pipe\\D:\\WebDProjects\\ReactPractise\\RadhaPublicationsWebApp\\amazon-clone\\amazon-clone\\functions\\4880"}}
+[debug] [2022-06-26T14:16:38.390Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-06-26T14:16:38.392Z] [functions] Got req.url=/clone-298ba/us-central1/api/payments/create?total=71700, mapping to path=/payments/create?total=71700 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/clone-298ba/us-central1/api/payments/create?total=71700, mapping to path=/payments/create?total=71700"}}
+[debug] [2022-06-26T14:16:38.405Z] [runtime-status] [4880] Ephemeral server handling POST request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [4880] Ephemeral server handling POST request"}}
+[info] >  Payment Request Recieved BOOM!!! for this amount>>> 71700 {"user":"Payment Request Recieved BOOM!!! for this amount>>> 71700","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m Payment Request Recieved BOOM!!! for this amount>>> 71700"}}
+[debug] [2022-06-26T14:16:38.415Z] [runtime-status] [4880] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [4880] Ephemeral server survived."}}
+[debug] [2022-06-26T14:16:38.681Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2022-06-26T14:16:38.682Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2022-06-26T14:16:38.683Z] Accepted request POST /clone-298ba/us-central1/api/payments/create?total=71700 --> us-central1-api
+[debug] [2022-06-26T14:16:38.707Z] [worker-pool] addWorker(us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-api)"}}
+[debug] [2022-06-26T14:16:38.708Z] [worker-pool] Adding worker with key us-central1-api, total=2 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-api, total=2"}}
+[debug] [2022-06-26T14:16:38.708Z] [worker-pool] submitWork(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-api)"}}
+[debug] [2022-06-26T14:16:38.708Z] [worker-us-central1-api-97de2d4c-2620-4f12-bd7e-0487569a283f]: Assigning socketPath: \\?\pipe\D:\WebDProjects\ReactPractise\RadhaPublicationsWebApp\amazon-clone\amazon-clone\functions\23976 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-97de2d4c-2620-4f12-bd7e-0487569a283f]: Assigning socketPath: \\\\?\\pipe\\D:\\WebDProjects\\ReactPractise\\RadhaPublicationsWebApp\\amazon-clone\\amazon-clone\\functions\\23976"}}
+[debug] [2022-06-26T14:16:38.708Z] [worker-us-central1-api-97de2d4c-2620-4f12-bd7e-0487569a283f]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-97de2d4c-2620-4f12-bd7e-0487569a283f]: BUSY"}}
+[info] i  functions: Finished "api" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"api\" in ~1s"}}
+[debug] [2022-06-26T14:16:38.747Z] [worker-us-central1-api-dba1a3d2-17be-4333-81fb-7d6abd00b44b]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-dba1a3d2-17be-4333-81fb-7d6abd00b44b]: IDLE"}}
+[debug] [2022-06-26T14:16:38.748Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-06-26T14:16:43.877Z] [runtime-status] [23976] Functions runtime initialized. {"cwd":"D:\\WebDProjects\\ReactPractise\\RadhaPublicationsWebApp\\amazon-clone\\amazon-clone\\functions","node_version":"18.4.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [23976] Functions runtime initialized. {\"cwd\":\"D:\\\\WebDProjects\\\\ReactPractise\\\\RadhaPublicationsWebApp\\\\amazon-clone\\\\amazon-clone\\\\functions\",\"node_version\":\"18.4.0\"}"}}
+[debug] [2022-06-26T14:16:43.880Z] [runtime-status] [23976] Disabled runtime features: undefined {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [23976] Disabled runtime features: undefined"}}
+[debug] [2022-06-26T14:16:43.892Z] [runtime-status] [23976] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"D:\\WebDProjects\\ReactPractise\\RadhaPublicationsWebApp\\amazon-clone\\amazon-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [23976] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"D:\\\\WebDProjects\\\\ReactPractise\\\\RadhaPublicationsWebApp\\\\amazon-clone\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2022-06-26T14:16:43.897Z] [runtime-status] [23976] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.21.2","resolution":"D:\\WebDProjects\\ReactPractise\\RadhaPublicationsWebApp\\amazon-clone\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [23976] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.21.2\",\"resolution\":\"D:\\\\WebDProjects\\\\ReactPractise\\\\RadhaPublicationsWebApp\\\\amazon-clone\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-06-26T14:16:43.899Z] [runtime-status] [23976] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [23976] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-06-26T14:16:43.901Z] [runtime-status] [23976] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.21.2","resolution":"D:\\WebDProjects\\ReactPractise\\RadhaPublicationsWebApp\\amazon-clone\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [23976] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.21.2\",\"resolution\":\"D:\\\\WebDProjects\\\\ReactPractise\\\\RadhaPublicationsWebApp\\\\amazon-clone\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-06-26T14:16:44.045Z] [runtime-status] [23976] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [23976] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-06-26T14:16:44.046Z] [runtime-status] [23976] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.21.2","resolution":"D:\\WebDProjects\\ReactPractise\\RadhaPublicationsWebApp\\amazon-clone\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [23976] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.21.2\",\"resolution\":\"D:\\\\WebDProjects\\\\ReactPractise\\\\RadhaPublicationsWebApp\\\\amazon-clone\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}}"}}
+[debug] [2022-06-26T14:16:44.049Z] [runtime-status] [23976] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.21.2","resolution":"D:\\WebDProjects\\ReactPractise\\RadhaPublicationsWebApp\\amazon-clone\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [23976] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.21.2\",\"resolution\":\"D:\\\\WebDProjects\\\\ReactPractise\\\\RadhaPublicationsWebApp\\\\amazon-clone\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-06-26T14:16:44.055Z] [runtime-status] [23976] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"D:\\WebDProjects\\ReactPractise\\RadhaPublicationsWebApp\\amazon-clone\\amazon-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [23976] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"D:\\\\WebDProjects\\\\ReactPractise\\\\RadhaPublicationsWebApp\\\\amazon-clone\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2022-06-26T14:16:44.057Z] [runtime-status] [23976] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.21.2","resolution":"D:\\WebDProjects\\ReactPractise\\RadhaPublicationsWebApp\\amazon-clone\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [23976] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.21.2\",\"resolution\":\"D:\\\\WebDProjects\\\\ReactPractise\\\\RadhaPublicationsWebApp\\\\amazon-clone\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-06-26T14:16:44.058Z] [runtime-status] [23976] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"D:\\WebDProjects\\ReactPractise\\RadhaPublicationsWebApp\\amazon-clone\\amazon-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [23976] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"D:\\\\WebDProjects\\\\ReactPractise\\\\RadhaPublicationsWebApp\\\\amazon-clone\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2022-06-26T14:16:44.649Z] [runtime-status] [23976] Beginning invocation function api! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [23976] Beginning invocation function api!"}}
+[info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"api\""}}
+[debug] [2022-06-26T14:16:44.652Z] [runtime-status] [23976] Running api in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [23976] Running api in signature http"}}
+[debug] [2022-06-26T14:16:44.658Z] [runtime-status] [23976] Attempting to listen to socketPath: \\?\pipe\D:\WebDProjects\ReactPractise\RadhaPublicationsWebApp\amazon-clone\amazon-clone\functions\23976 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [23976] Attempting to listen to socketPath: \\\\?\\pipe\\D:\\WebDProjects\\ReactPractise\\RadhaPublicationsWebApp\\amazon-clone\\amazon-clone\\functions\\23976"}}
+[debug] [2022-06-26T14:16:44.670Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-06-26T14:16:44.671Z] [functions] Got req.url=/clone-298ba/us-central1/api/payments/create?total=71700, mapping to path=/payments/create?total=71700 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/clone-298ba/us-central1/api/payments/create?total=71700, mapping to path=/payments/create?total=71700"}}
+[debug] [2022-06-26T14:16:44.684Z] [runtime-status] [23976] Ephemeral server handling POST request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [23976] Ephemeral server handling POST request"}}
+[info] >  Payment Request Recieved BOOM!!! for this amount>>> 71700 {"user":"Payment Request Recieved BOOM!!! for this amount>>> 71700","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m Payment Request Recieved BOOM!!! for this amount>>> 71700"}}
+[debug] [2022-06-26T14:16:44.710Z] [runtime-status] [23976] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [23976] Ephemeral server survived."}}
+[info] i  functions: Finished "api" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"api\" in ~1s"}}
+[debug] [2022-06-26T14:16:46.411Z] [worker-us-central1-api-97de2d4c-2620-4f12-bd7e-0487569a283f]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-97de2d4c-2620-4f12-bd7e-0487569a283f]: IDLE"}}
+[debug] [2022-06-26T14:16:46.412Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-06-26T14:57:05.131Z] File D:\WebDProjects\ReactPractise\RadhaPublicationsWebApp\amazon-clone\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\WebDProjects\\ReactPractise\\RadhaPublicationsWebApp\\amazon-clone\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-06-26T14:57:06.140Z] [worker-pool] Shutting down IDLE worker (us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-api)"}}
+[debug] [2022-06-26T14:57:06.140Z] [worker-us-central1-api-dba1a3d2-17be-4333-81fb-7d6abd00b44b]: FINISHING {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-dba1a3d2-17be-4333-81fb-7d6abd00b44b]: FINISHING"}}
+[debug] [2022-06-26T14:57:06.141Z] [worker-pool] Shutting down IDLE worker (us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-api)"}}
+[debug] [2022-06-26T14:57:06.141Z] [worker-us-central1-api-97de2d4c-2620-4f12-bd7e-0487569a283f]: FINISHING {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-97de2d4c-2620-4f12-bd7e-0487569a283f]: FINISHING"}}
+[debug] [2022-06-26T14:57:06.145Z] Validating nodejs source
+[debug] [2022-06-26T14:57:10.860Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^9.10.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-06-26T14:57:10.861Z] Building nodejs source
+[debug] [2022-06-26T14:57:10.861Z] Analyzing nodejs backend spec
+[debug] [2022-06-26T14:57:10.864Z] [worker-us-central1-api-dba1a3d2-17be-4333-81fb-7d6abd00b44b]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-dba1a3d2-17be-4333-81fb-7d6abd00b44b]: exited"}}
+[debug] [2022-06-26T14:57:10.864Z] [worker-us-central1-api-dba1a3d2-17be-4333-81fb-7d6abd00b44b]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-dba1a3d2-17be-4333-81fb-7d6abd00b44b]: FINISHED"}}
+[debug] [2022-06-26T14:57:10.864Z] [worker-us-central1-api-97de2d4c-2620-4f12-bd7e-0487569a283f]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-97de2d4c-2620-4f12-bd7e-0487569a283f]: exited"}}
+[debug] [2022-06-26T14:57:10.865Z] [worker-us-central1-api-97de2d4c-2620-4f12-bd7e-0487569a283f]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-97de2d4c-2620-4f12-bd7e-0487569a283f]: FINISHED"}}
+[debug] [2022-06-26T14:57:10.866Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-06-26T14:57:10.877Z] File D:\WebDProjects\ReactPractise\RadhaPublicationsWebApp\amazon-clone\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\WebDProjects\\ReactPractise\\RadhaPublicationsWebApp\\amazon-clone\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-06-26T14:57:11.467Z] Serving at port 9005
+
+[debug] [2022-06-26T14:57:11.750Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-06-26T14:57:11.762Z] shutdown requested via /__/quitquitquit
+
+[debug] [2022-06-26T14:57:11.888Z] Validating nodejs source
+[debug] [2022-06-26T14:57:16.067Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^9.10.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-06-26T14:57:16.067Z] Building nodejs source
+[debug] [2022-06-26T14:57:16.067Z] Analyzing nodejs backend spec
+[debug] [2022-06-26T14:57:16.068Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-06-26T14:57:16.528Z] Serving at port 9005
+
+[debug] [2022-06-26T14:57:16.771Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-06-26T14:57:16.780Z] shutdown requested via /__/quitquitquit
+
+[debug] [2022-06-26T14:57:17.821Z] File D:\WebDProjects\ReactPractise\RadhaPublicationsWebApp\amazon-clone\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\WebDProjects\\ReactPractise\\RadhaPublicationsWebApp\\amazon-clone\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-06-26T14:57:18.836Z] Validating nodejs source
+[debug] [2022-06-26T14:57:23.262Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^9.10.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-06-26T14:57:23.263Z] Building nodejs source
+[debug] [2022-06-26T14:57:23.263Z] Analyzing nodejs backend spec
+[debug] [2022-06-26T14:57:23.263Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-06-26T14:57:23.679Z] Serving at port 9005
+
+[debug] [2022-06-26T14:57:23.922Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-06-26T14:57:23.931Z] shutdown requested via /__/quitquitquit
+
+[debug] [2022-06-26T14:57:48.827Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-06-26T14:57:48.828Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-06-26T14:57:48.828Z] Accepted request POST /clone-298ba/us-central1/api/payments/create?total=25096 --> us-central1-api
+[debug] [2022-06-26T14:57:48.828Z] [worker-pool] Cleaned up workers for us-central1-api: 2 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-api: 2 --> 0"}}
+[debug] [2022-06-26T14:57:48.840Z] [worker-pool] addWorker(us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-api)"}}
+[debug] [2022-06-26T14:57:48.841Z] [worker-pool] Adding worker with key us-central1-api, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-api, total=1"}}
+[debug] [2022-06-26T14:57:48.841Z] [worker-pool] submitWork(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-api)"}}
+[debug] [2022-06-26T14:57:48.841Z] [worker-us-central1-api-02c5a170-d599-4676-bf74-8c24857c80f0]: Assigning socketPath: \\?\pipe\D:\WebDProjects\ReactPractise\RadhaPublicationsWebApp\amazon-clone\amazon-clone\functions\25888 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-02c5a170-d599-4676-bf74-8c24857c80f0]: Assigning socketPath: \\\\?\\pipe\\D:\\WebDProjects\\ReactPractise\\RadhaPublicationsWebApp\\amazon-clone\\amazon-clone\\functions\\25888"}}
+[debug] [2022-06-26T14:57:48.841Z] [worker-us-central1-api-02c5a170-d599-4676-bf74-8c24857c80f0]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-02c5a170-d599-4676-bf74-8c24857c80f0]: BUSY"}}
+[debug] [2022-06-26T14:57:48.842Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2022-06-26T14:57:48.842Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2022-06-26T14:57:48.842Z] Accepted request POST /clone-298ba/us-central1/api/payments/create?total=25096 --> us-central1-api
+[debug] [2022-06-26T14:57:48.855Z] [worker-pool] addWorker(us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-api)"}}
+[debug] [2022-06-26T14:57:48.856Z] [worker-pool] Adding worker with key us-central1-api, total=2 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-api, total=2"}}
+[debug] [2022-06-26T14:57:48.856Z] [worker-pool] submitWork(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-api)"}}
+[debug] [2022-06-26T14:57:48.856Z] [worker-us-central1-api-ff7dd47b-9bde-43f8-9568-a2a9ac0d37bd]: Assigning socketPath: \\?\pipe\D:\WebDProjects\ReactPractise\RadhaPublicationsWebApp\amazon-clone\amazon-clone\functions\1032 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-ff7dd47b-9bde-43f8-9568-a2a9ac0d37bd]: Assigning socketPath: \\\\?\\pipe\\D:\\WebDProjects\\ReactPractise\\RadhaPublicationsWebApp\\amazon-clone\\amazon-clone\\functions\\1032"}}
+[debug] [2022-06-26T14:57:48.856Z] [worker-us-central1-api-ff7dd47b-9bde-43f8-9568-a2a9ac0d37bd]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-ff7dd47b-9bde-43f8-9568-a2a9ac0d37bd]: BUSY"}}
+[debug] [2022-06-26T14:57:51.828Z] [runtime-status] [1032] Functions runtime initialized. {"cwd":"D:\\WebDProjects\\ReactPractise\\RadhaPublicationsWebApp\\amazon-clone\\amazon-clone\\functions","node_version":"18.4.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [1032] Functions runtime initialized. {\"cwd\":\"D:\\\\WebDProjects\\\\ReactPractise\\\\RadhaPublicationsWebApp\\\\amazon-clone\\\\amazon-clone\\\\functions\",\"node_version\":\"18.4.0\"}"}}
+[debug] [2022-06-26T14:57:51.830Z] [runtime-status] [1032] Disabled runtime features: undefined {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [1032] Disabled runtime features: undefined"}}
+[debug] [2022-06-26T14:57:51.837Z] [runtime-status] [1032] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"D:\\WebDProjects\\ReactPractise\\RadhaPublicationsWebApp\\amazon-clone\\amazon-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [1032] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"D:\\\\WebDProjects\\\\ReactPractise\\\\RadhaPublicationsWebApp\\\\amazon-clone\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2022-06-26T14:57:51.842Z] [runtime-status] [1032] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.21.2","resolution":"D:\\WebDProjects\\ReactPractise\\RadhaPublicationsWebApp\\amazon-clone\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [1032] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.21.2\",\"resolution\":\"D:\\\\WebDProjects\\\\ReactPractise\\\\RadhaPublicationsWebApp\\\\amazon-clone\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-06-26T14:57:51.843Z] [runtime-status] [1032] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [1032] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-06-26T14:57:51.845Z] [runtime-status] [1032] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.21.2","resolution":"D:\\WebDProjects\\ReactPractise\\RadhaPublicationsWebApp\\amazon-clone\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [1032] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.21.2\",\"resolution\":\"D:\\\\WebDProjects\\\\ReactPractise\\\\RadhaPublicationsWebApp\\\\amazon-clone\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-06-26T14:57:51.851Z] [runtime-status] [25888] Functions runtime initialized. {"cwd":"D:\\WebDProjects\\ReactPractise\\RadhaPublicationsWebApp\\amazon-clone\\amazon-clone\\functions","node_version":"18.4.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [25888] Functions runtime initialized. {\"cwd\":\"D:\\\\WebDProjects\\\\ReactPractise\\\\RadhaPublicationsWebApp\\\\amazon-clone\\\\amazon-clone\\\\functions\",\"node_version\":\"18.4.0\"}"}}
+[debug] [2022-06-26T14:57:51.853Z] [runtime-status] [25888] Disabled runtime features: undefined {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [25888] Disabled runtime features: undefined"}}
+[debug] [2022-06-26T14:57:51.859Z] [runtime-status] [25888] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"D:\\WebDProjects\\ReactPractise\\RadhaPublicationsWebApp\\amazon-clone\\amazon-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [25888] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"D:\\\\WebDProjects\\\\ReactPractise\\\\RadhaPublicationsWebApp\\\\amazon-clone\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2022-06-26T14:57:51.863Z] [runtime-status] [25888] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.21.2","resolution":"D:\\WebDProjects\\ReactPractise\\RadhaPublicationsWebApp\\amazon-clone\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [25888] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.21.2\",\"resolution\":\"D:\\\\WebDProjects\\\\ReactPractise\\\\RadhaPublicationsWebApp\\\\amazon-clone\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-06-26T14:57:51.863Z] [runtime-status] [25888] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [25888] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-06-26T14:57:51.865Z] [runtime-status] [25888] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.21.2","resolution":"D:\\WebDProjects\\ReactPractise\\RadhaPublicationsWebApp\\amazon-clone\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [25888] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.21.2\",\"resolution\":\"D:\\\\WebDProjects\\\\ReactPractise\\\\RadhaPublicationsWebApp\\\\amazon-clone\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-06-26T14:57:51.937Z] [runtime-status] [1032] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [1032] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-06-26T14:57:51.938Z] [runtime-status] [1032] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.21.2","resolution":"D:\\WebDProjects\\ReactPractise\\RadhaPublicationsWebApp\\amazon-clone\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [1032] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.21.2\",\"resolution\":\"D:\\\\WebDProjects\\\\ReactPractise\\\\RadhaPublicationsWebApp\\\\amazon-clone\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}}"}}
+[debug] [2022-06-26T14:57:51.940Z] [runtime-status] [1032] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.21.2","resolution":"D:\\WebDProjects\\ReactPractise\\RadhaPublicationsWebApp\\amazon-clone\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [1032] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.21.2\",\"resolution\":\"D:\\\\WebDProjects\\\\ReactPractise\\\\RadhaPublicationsWebApp\\\\amazon-clone\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-06-26T14:57:51.943Z] [runtime-status] [1032] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"D:\\WebDProjects\\ReactPractise\\RadhaPublicationsWebApp\\amazon-clone\\amazon-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [1032] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"D:\\\\WebDProjects\\\\ReactPractise\\\\RadhaPublicationsWebApp\\\\amazon-clone\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2022-06-26T14:57:51.944Z] [runtime-status] [1032] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.21.2","resolution":"D:\\WebDProjects\\ReactPractise\\RadhaPublicationsWebApp\\amazon-clone\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [1032] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.21.2\",\"resolution\":\"D:\\\\WebDProjects\\\\ReactPractise\\\\RadhaPublicationsWebApp\\\\amazon-clone\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-06-26T14:57:51.945Z] [runtime-status] [1032] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"D:\\WebDProjects\\ReactPractise\\RadhaPublicationsWebApp\\amazon-clone\\amazon-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [1032] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"D:\\\\WebDProjects\\\\ReactPractise\\\\RadhaPublicationsWebApp\\\\amazon-clone\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2022-06-26T14:57:51.948Z] [runtime-status] [25888] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [25888] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-06-26T14:57:51.948Z] [runtime-status] [25888] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.21.2","resolution":"D:\\WebDProjects\\ReactPractise\\RadhaPublicationsWebApp\\amazon-clone\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [25888] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.21.2\",\"resolution\":\"D:\\\\WebDProjects\\\\ReactPractise\\\\RadhaPublicationsWebApp\\\\amazon-clone\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}}"}}
+[debug] [2022-06-26T14:57:51.949Z] [runtime-status] [25888] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.21.2","resolution":"D:\\WebDProjects\\ReactPractise\\RadhaPublicationsWebApp\\amazon-clone\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [25888] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.21.2\",\"resolution\":\"D:\\\\WebDProjects\\\\ReactPractise\\\\RadhaPublicationsWebApp\\\\amazon-clone\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-06-26T14:57:51.953Z] [runtime-status] [25888] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"D:\\WebDProjects\\ReactPractise\\RadhaPublicationsWebApp\\amazon-clone\\amazon-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [25888] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"D:\\\\WebDProjects\\\\ReactPractise\\\\RadhaPublicationsWebApp\\\\amazon-clone\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2022-06-26T14:57:51.954Z] [runtime-status] [25888] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.21.2","resolution":"D:\\WebDProjects\\ReactPractise\\RadhaPublicationsWebApp\\amazon-clone\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [25888] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.21.2\",\"resolution\":\"D:\\\\WebDProjects\\\\ReactPractise\\\\RadhaPublicationsWebApp\\\\amazon-clone\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-06-26T14:57:51.954Z] [runtime-status] [25888] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"D:\\WebDProjects\\ReactPractise\\RadhaPublicationsWebApp\\amazon-clone\\amazon-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [25888] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"D:\\\\WebDProjects\\\\ReactPractise\\\\RadhaPublicationsWebApp\\\\amazon-clone\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2022-06-26T14:57:52.339Z] [runtime-status] [1032] Beginning invocation function api! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [1032] Beginning invocation function api!"}}
+[info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"api\""}}
+[debug] [2022-06-26T14:57:52.341Z] [runtime-status] [1032] Running api in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [1032] Running api in signature http"}}
+[debug] [2022-06-26T14:57:52.341Z] [runtime-status] [25888] Beginning invocation function api! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [25888] Beginning invocation function api!"}}
+[info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"api\""}}
+[debug] [2022-06-26T14:57:52.343Z] [runtime-status] [25888] Running api in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [25888] Running api in signature http"}}
+[debug] [2022-06-26T14:57:52.345Z] [runtime-status] [1032] Attempting to listen to socketPath: \\?\pipe\D:\WebDProjects\ReactPractise\RadhaPublicationsWebApp\amazon-clone\amazon-clone\functions\1032 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [1032] Attempting to listen to socketPath: \\\\?\\pipe\\D:\\WebDProjects\\ReactPractise\\RadhaPublicationsWebApp\\amazon-clone\\amazon-clone\\functions\\1032"}}
+[debug] [2022-06-26T14:57:52.347Z] [runtime-status] [25888] Attempting to listen to socketPath: \\?\pipe\D:\WebDProjects\ReactPractise\RadhaPublicationsWebApp\amazon-clone\amazon-clone\functions\25888 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [25888] Attempting to listen to socketPath: \\\\?\\pipe\\D:\\WebDProjects\\ReactPractise\\RadhaPublicationsWebApp\\amazon-clone\\amazon-clone\\functions\\25888"}}
+[debug] [2022-06-26T14:57:52.357Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-06-26T14:57:52.358Z] [functions] Got req.url=/clone-298ba/us-central1/api/payments/create?total=25096, mapping to path=/payments/create?total=25096 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/clone-298ba/us-central1/api/payments/create?total=25096, mapping to path=/payments/create?total=25096"}}
+[debug] [2022-06-26T14:57:52.366Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-06-26T14:57:52.367Z] [functions] Got req.url=/clone-298ba/us-central1/api/payments/create?total=25096, mapping to path=/payments/create?total=25096 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/clone-298ba/us-central1/api/payments/create?total=25096, mapping to path=/payments/create?total=25096"}}
+[debug] [2022-06-26T14:57:52.375Z] [runtime-status] [1032] Ephemeral server handling POST request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [1032] Ephemeral server handling POST request"}}
+[info] >  Payment Request Recieved BOOM!!! for this amount>>> 25096 {"user":"Payment Request Recieved BOOM!!! for this amount>>> 25096","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m Payment Request Recieved BOOM!!! for this amount>>> 25096"}}
+[debug] [2022-06-26T14:57:52.383Z] [runtime-status] [25888] Ephemeral server handling POST request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [25888] Ephemeral server handling POST request"}}
+[info] >  Payment Request Recieved BOOM!!! for this amount>>> 25096 {"user":"Payment Request Recieved BOOM!!! for this amount>>> 25096","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m Payment Request Recieved BOOM!!! for this amount>>> 25096"}}
+[debug] [2022-06-26T14:57:52.396Z] [runtime-status] [1032] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [1032] Ephemeral server survived."}}
+[debug] [2022-06-26T14:57:52.408Z] [runtime-status] [25888] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [25888] Ephemeral server survived."}}
+[info] i  functions: Finished "api" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"api\" in ~1s"}}
+[debug] [2022-06-26T14:57:53.164Z] [worker-us-central1-api-02c5a170-d599-4676-bf74-8c24857c80f0]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-02c5a170-d599-4676-bf74-8c24857c80f0]: IDLE"}}
+[debug] [2022-06-26T14:57:53.164Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[info] i  functions: Finished "api" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"api\" in ~1s"}}
+[debug] [2022-06-26T14:57:53.251Z] [worker-us-central1-api-ff7dd47b-9bde-43f8-9568-a2a9ac0d37bd]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-ff7dd47b-9bde-43f8-9568-a2a9ac0d37bd]: IDLE"}}
+[debug] [2022-06-26T14:57:53.252Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-06-26T14:58:40.179Z] File D:\WebDProjects\ReactPractise\RadhaPublicationsWebApp\amazon-clone\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\WebDProjects\\ReactPractise\\RadhaPublicationsWebApp\\amazon-clone\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-06-26T14:58:41.185Z] [worker-pool] Shutting down IDLE worker (us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-api)"}}
+[debug] [2022-06-26T14:58:41.185Z] [worker-us-central1-api-02c5a170-d599-4676-bf74-8c24857c80f0]: FINISHING {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-02c5a170-d599-4676-bf74-8c24857c80f0]: FINISHING"}}
+[debug] [2022-06-26T14:58:41.186Z] [worker-pool] Shutting down IDLE worker (us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-api)"}}
+[debug] [2022-06-26T14:58:41.186Z] [worker-us-central1-api-ff7dd47b-9bde-43f8-9568-a2a9ac0d37bd]: FINISHING {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-ff7dd47b-9bde-43f8-9568-a2a9ac0d37bd]: FINISHING"}}
+[debug] [2022-06-26T14:58:41.188Z] Validating nodejs source
+[debug] [2022-06-26T14:58:45.789Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^9.10.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-06-26T14:58:45.790Z] Building nodejs source
+[debug] [2022-06-26T14:58:45.790Z] Analyzing nodejs backend spec
+[debug] [2022-06-26T14:58:45.790Z] [worker-us-central1-api-02c5a170-d599-4676-bf74-8c24857c80f0]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-02c5a170-d599-4676-bf74-8c24857c80f0]: exited"}}
+[debug] [2022-06-26T14:58:45.791Z] [worker-us-central1-api-02c5a170-d599-4676-bf74-8c24857c80f0]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-02c5a170-d599-4676-bf74-8c24857c80f0]: FINISHED"}}
+[debug] [2022-06-26T14:58:45.791Z] [worker-us-central1-api-ff7dd47b-9bde-43f8-9568-a2a9ac0d37bd]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-ff7dd47b-9bde-43f8-9568-a2a9ac0d37bd]: exited"}}
+[debug] [2022-06-26T14:58:45.791Z] [worker-us-central1-api-ff7dd47b-9bde-43f8-9568-a2a9ac0d37bd]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-ff7dd47b-9bde-43f8-9568-a2a9ac0d37bd]: FINISHED"}}
+[debug] [2022-06-26T14:58:45.791Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-06-26T14:58:46.181Z] Serving at port 9005
+
+[debug] [2022-06-26T14:58:46.399Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-06-26T14:58:46.407Z] shutdown requested via /__/quitquitquit
+
+[debug] [2022-06-26T15:00:56.406Z] Received signal SIGHUP 1
