@@ -15,7 +15,7 @@ const authenticate=()=>{
   return (
     <div className='header'>
       <Link to ="/">
-<img className="header__logo" alt="head" src="http://pngimg.com/uploads/amazon/amazon_PNG11.png"/>
+<img className="header__logo" alt="head" src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/c46c7f62556223.5a945f059c90e.png"/>
 </Link>
 <div className="header-search">
 <input className="header-searchInput" type="text" />
@@ -33,10 +33,6 @@ const authenticate=()=>{
 <div className="header_option">
 <span className='header-optionLineOne'>Returns</span>
 <span className='header-optionLineTwo'>Orders</span>
-</div>
-<div className="header_option">
-<span className='header-optionLineOne'> Yours</span>
-<span className='header-optionLineTwo'>Prime</span>
 </div>
 
 
