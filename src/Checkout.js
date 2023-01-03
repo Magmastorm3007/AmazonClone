@@ -9,7 +9,7 @@ function Checkout() {    const [{basket,user},dispatch]=UseStateValue();
             <div className="checkout__left">
       <img className='checkout__ad' src="https://rukminim1.flixcart.com/flap/1800/1800/image/b3fe381767050079.jpg?q=80" alt=""/>
      <div>
-      <h3>Hello {user?.email||'guest'}</h3>
+      <h3>Welcome {user?.email||'guest'}</h3>
          <h2 className="checkout__title">Your Shopping Basket</h2>
          
           {basket.map(item=>(

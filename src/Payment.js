@@ -14,7 +14,7 @@ import ModalHeader from "react-bootstrap/ModalHeader";
 import ModalFooter from "react-bootstrap/ModalFooter";
 import ModalTitle from "react-bootstrap/ModalTitle";
 
-import axios from './axios';
+import * as axios from 'axios'
 import { db } from "./firebase";
 
 function Payment() {
@@ -45,12 +45,17 @@ function Payment() {
     useEffect(() => {
         // generate the special stripe secret which allows us to charge a customer
         const getClientSecret = async () => {
+            
             const response = await axios({
                 method: 'post',
-                // Stripe expects the total in a currencies subunit
                 url: `/payments/create?total=${getBasketTotal(basket) * 100}`
+            }).then({
+                if(err){console.log(err)}
             });
+              //?total=${getBasketTotal(basket) * 100}
+     
             setClientSecret(response.data.clientSecret)
+      
         }
 
         getClientSecret();
@@ -86,14 +91,7 @@ function Payment() {
         })
 
        
-        (({ paymentIntent }) => {
-            db.collection('users').doc(user?.uid).collection('orders')
-            .set({
-                basket: basket,
-                amount: paymentIntent.amount,
-                created:paymentIntent.created
-            })
-        })
+   
 
     }
 
@@ -169,8 +167,8 @@ function Payment() {
                                         thousandSeparator={true}
                                         prefix={"$"}
                                     />
-                                    <button onClick={showModal} className='process' disabled={processing || disabled || succeeded}>
-                                        <span>{processing ? <p>Processing</p> : "Buy Now"} </span>  
+                                    <button onClick={showModal} className='process' disabled={processing || disabled || succeeded||error}>
+                                        <span>{processing ? "Processing" : "Purchase    "} </span>  
                                     
                                     </button>
                                 </div>
