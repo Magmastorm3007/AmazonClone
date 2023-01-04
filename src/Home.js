@@ -2,7 +2,7 @@ import React,{useState,useEffect} from "react";
 import "./Home.css";
 import Product from "./Product";
 
-function Home() {
+function Home({list,SetList}) {
   const [books,SetBooks]=useState([
     {title: '',
     description:'',
@@ -19,8 +19,10 @@ useEffect(()=>{
     fetch('/api/book').then(res=>{
         if(res.ok)
      return res.json()
+
     }).then(js=>SetBooks(js))
-},[])
+    console.log(list)
+},[list])
   return (
     <div className="home">
      
@@ -32,15 +34,25 @@ useEffect(()=>{
         />
 
 <div class="row">
-{books.map(book=>
+{books.filter(book => {
+    if (list=== '') {
+      return book;
+      
+    
+    } else if (book.title.toLowerCase().includes(list.toLowerCase())) {
+      return book;
+    }
+  })
+.map(book=>
 
 <div class="col-4">
  <div class="card">
           <Product
+             isbn={book.isbn}
             id={book.id}
             title={book.title}
             price={parseInt(book.price)}
-            rating={4}
+            rating={parseInt(book.stars)}
             image={book.image}
             author={book.author}
 

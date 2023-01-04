@@ -1,10 +1,11 @@
 import React from "react";
 import "./Product.css";
 import { UseStateValue } from "./stateProvider";
-import {  Link } from "react-router-dom";
-function Product({ id, title, image, price, rating,author,isbn }) {
+
+import {  Link ,useNavigate} from "react-router-dom";
+function Book({ id, title, image, price, rating,author,isbn }) {
   const [{ basket }, dispatch] = UseStateValue();
-  console.log(rating)
+
   const addToBasket = () => {
     // dispatch the item into the data layer
     dispatch({
@@ -22,29 +23,34 @@ function Product({ id, title, image, price, rating,author,isbn }) {
   return (
     <div className="product">
       <div className="product__info">
-        <p>{title}</p>
-       
-   
-        <div className="product-rating">
+        <h2>{title}</h2>
        
       
-        </div>
-        
+     
+      
       </div>
 
-      <img className="product__img" src={image} alt="" />
+      <img className="product_img" src={image} alt="" />
       <div className="product__info">
         <p>Written by {author}</p>
-           
+        </div>
         <p className="product__price">
           <small>Rs.</small>
           <strong>{price}</strong>
         </p>
+        <div className="product-rating">
+          {Array(rating)
+            .fill()
+            .map((_, {rating}) => (
+              <p>⭐</p>
+            ))}
         </div>
-        <Link to={"/book/"+isbn}> <button className="product_button">View item</button></Link>  
-
+        
+   <button onClick={addToBasket}>Add to Basket</button>
     </div>
+
+
   );
 }
 
-export default Product;
+export default Book;

@@ -19,6 +19,7 @@ import { db } from "./firebase";
 
 function Payment() {
     const [isOpen, setIsOpen] = useState(false);
+    
     const showModal = () => {
     setIsOpen(true);
   };
@@ -61,7 +62,7 @@ function Payment() {
         getClientSecret();
     }, [basket])
 
-    console.log('THE SECRET IS >>>', clientSecret)
+    console.log('secret is', clientSecret)
     console.log('👱', user)
 
     const handleSubmit = async (event) => {
@@ -75,13 +76,26 @@ function Payment() {
             }
         }).then
         (({ paymentIntent }) => {
+          
+            const newpayment={
+                userid:user.email,
+                 basket:basket,
+                 amount:getBasketTotal(basket),
+                 created:new Date().toLocaleString() ,
+               
+               }
+               axios.post('/api/details',newpayment).then(
+                 console.log('success')
+               )
+            
             // paymentIntent = payment confirmation
 
           
             setSucceeded(true);
             setError(null)
             setProcessing(false)
-       
+           
+            
             history('/')
       
             dispatch({
@@ -120,9 +134,28 @@ function Payment() {
                         <h3>Delivery Address</h3>
                     </div>
                     <div className='payment__address'>
-                        <p>{user?.email}</p>
-                        <p>123 React Lane</p>
-                        <p>Los Angeles, CA</p>
+                    <form>
+  <div class="form-group">
+    <label for="formGroupExampleInput">Residential Address</label>
+    <input type="text" class="form-control"  id="formGroupExampleInput"  placeholder="Enter Address"/>
+  </div>
+  <div class="form-group">
+    <label for="formGroupExampleInput2">City</label>
+    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Enter city"/>
+  </div>
+  <div class="form-group">
+    <label for="formGroupExampleInput2">State</label>
+    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Enter State/U.T"/>
+  </div>
+  <div class="form-group">
+    <label for="formGroupExampleInput2">Pincode</label>
+    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Pincode of your location"/>
+  </div>
+  <div class="form-group">
+    <label for="formGroupExampleInput2">Phone Number</label>
+    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Enter your contact details"/>
+  </div>
+</form>
                     </div>
                 </div>
 
@@ -165,7 +198,7 @@ function Payment() {
                                         value={getBasketTotal(basket)}
                                         displayType={"text"}
                                         thousandSeparator={true}
-                                        prefix={"$"}
+                                        prefix={"INR "}
                                     />
                                     <button onClick={showModal} className='process' disabled={processing || disabled || succeeded||error}>
                                         <span>{processing ? "Processing" : "Purchase    "} </span>  
@@ -184,7 +217,7 @@ function Payment() {
         <Modal.Header>
           <Modal.Title>Payment Completed Successfully</Modal.Title>
         </Modal.Header>
-        <Modal.Body>Thanks for ordering on Amazon Clone</Modal.Body>
+        <Modal.Body>Thanks for ordering on Online Bookstore</Modal.Body>
        
       </Modal>
        

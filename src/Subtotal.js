@@ -6,16 +6,16 @@ import "./Subtotal.css"
 function Subtotal() {
   const history=useNavigate()
 
-  const [{basket}] = UseStateValue() // Pull the basket from useStateValue
+  const [{basket,user}] = UseStateValue() 
 
-  // Homework - Calculate basket total
+
   const calculateTotal = (basket) => {
       return basket.reduce((price, item) => item.price + price, 0)
   }
   return (
     <div className="Subtotal">
         <CurrencyFormat 
-        renderText={(value)=>(//homework /*basket.length*/ value
+        renderText={(value)=>(
             <> 
             <p>SubTotal ({basket.length} items):<strong>Rs{calculateTotal(basket)}</strong></p>
             <small className="subtotal__gift">
@@ -30,7 +30,7 @@ function Subtotal() {
         thousandSeperator={true}
         prefix={"Rs"}
         />
-        <button onClick={e=>{history('/payment')}}>Proceed to checkout</button>
+        <button disabled={!calculateTotal(basket)} onClick={e=>{user?history('/payment'):history('/login')}}>Proceed to checkout</button>
     </div>
   )
 }
