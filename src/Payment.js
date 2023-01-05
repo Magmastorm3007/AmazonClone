@@ -19,12 +19,10 @@ import { db } from "./firebase";
 
 function Payment() {
     const [isOpen, setIsOpen] = useState(false);
-    
     const showModal = () => {
     setIsOpen(true);
   };
-
-  const hideModal = () => {
+    const hideModal = () => {
     setIsOpen(false);
   };
 
@@ -34,7 +32,7 @@ function Payment() {
 
     const stripe = useStripe();
     const elements = useElements();
-
+    const[address,setAddress]=useState(true)
     const [succeeded, setSucceeded] = useState(false);
     const [processing, setProcessing] = useState("");
     const [error, setError] = useState(null);
@@ -44,7 +42,7 @@ function Payment() {
         return basket.reduce((price, item) => item.price + price, 0)
     }
     useEffect(() => {
-        // generate the special stripe secret which allows us to charge a customer
+       
         const getClientSecret = async () => {
             
             const response = await axios({
@@ -53,8 +51,7 @@ function Payment() {
             }).then({
                 if(err){console.log(err)}
             });
-              //?total=${getBasketTotal(basket) * 100}
-     
+          
             setClientSecret(response.data.clientSecret)
       
         }
@@ -65,8 +62,14 @@ function Payment() {
     console.log('secret is', clientSecret)
     console.log('👱', user)
 
+
+    const sub=(e)=>{
+        e.preventDefault()
+        setAddress(false)
+        
+    }
     const handleSubmit = async (event) => {
-        // do all the fancy stripe stuff...
+       
         event.preventDefault();
         setProcessing(true);
 
@@ -134,26 +137,28 @@ function Payment() {
                         <h3>Delivery Address</h3>
                     </div>
                     <div className='payment__address'>
-                    <form>
+                    <form action='/' onSubmit={sub}>
   <div class="form-group">
     <label for="formGroupExampleInput">Residential Address</label>
-    <input type="text" class="form-control"  id="formGroupExampleInput"  placeholder="Enter Address"/>
+    <input type="text" class="form-control"   required={true}  id="formGroupExampleInput"  placeholder="Enter Address"/>
   </div>
   <div class="form-group">
     <label for="formGroupExampleInput2">City</label>
-    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Enter city"/>
+    <input type="text" class="form-control"   required={true} id="formGroupExampleInput2" placeholder="Enter city"/>
   </div>
   <div class="form-group">
     <label for="formGroupExampleInput2">State</label>
-    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Enter State/U.T"/>
+    <input type="text" class="form-control"   required={true} id="formGroupExampleInput2" placeholder="Enter State/U.T"/>
   </div>
   <div class="form-group">
     <label for="formGroupExampleInput2">Pincode</label>
-    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Pincode of your location"/>
+    <input type="text" class="form-control"  required={true} id="formGroupExampleInput2" placeholder="Pincode of your location"/>
   </div>
   <div class="form-group">
     <label for="formGroupExampleInput2">Phone Number</label>
-    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Enter your contact details"/>
+    <input type="text" class="form-control" required={true} id="formGroupExampleInput2" placeholder="Enter your contact details"/>
+  </div> <div class="form-group">
+  <button type="submit">Confirm</button>
   </div>
 </form>
                     </div>
@@ -200,7 +205,7 @@ function Payment() {
                                         thousandSeparator={true}
                                         prefix={"INR "}
                                     />
-                                    <button onClick={showModal} className='process' disabled={processing || disabled || succeeded||error}>
+                                    <button onClick={showModal} className='process' disabled={processing || disabled || succeeded||error||address}>
                                         <span>{processing ? "Processing" : "Purchase    "} </span>  
                                     
                                     </button>

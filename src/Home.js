@@ -1,8 +1,9 @@
 import React,{useState,useEffect} from "react";
 import "./Home.css";
 import Product from "./Product";
-
+import ReactPaginate from 'react-paginate';
 function Home({list,SetList}) {
+  
   const [books,SetBooks]=useState([
     {title: '',
     description:'',
@@ -14,6 +15,9 @@ function Home({list,SetList}) {
   
   }
 ])
+function handlePageClick({ selected: selectedPage }) {
+  setCurrentPage(selectedPage);
+}
 
 useEffect(()=>{
     fetch('/api/book').then(res=>{
@@ -23,6 +27,13 @@ useEffect(()=>{
     }).then(js=>SetBooks(js))
     console.log(list)
 },[list])
+
+const [currentPage, setCurrentPage] = useState(0);
+  const PER_PAGE = 4;
+  const offset = currentPage * PER_PAGE;
+  const currentPageData = books
+    .slice(offset, offset + PER_PAGE)
+    .map(({ thumburl }) => <img src={thumburl} />);const pageCount = Math.ceil(books.length / PER_PAGE);
   return (
     <div className="home">
      
@@ -34,7 +45,7 @@ useEffect(()=>{
         />
 
 <div class="row">
-{books.filter(book => {
+{books.slice(offset, offset + PER_PAGE).filter(book => {
     if (list=== '') {
       return book;
       
@@ -45,8 +56,8 @@ useEffect(()=>{
   })
 .map(book=>
 
-<div class="col-4">
- <div class="card">
+<div class="col-3">
+ <div className="card" >
           <Product
              isbn={book.isbn}
             id={book.id}
@@ -64,7 +75,28 @@ useEffect(()=>{
        
         )}
          </div>
+         <ReactPaginate
+        nextLabel="next >"
+        onPageChange={handlePageClick}
+        pageRangeDisplayed={3}
+        marginPagesDisplayed={2}
+        pageCount={pageCount}
+        previousLabel="< previous"
+        pageClassName="page-item"
+        pageLinkClassName="page-link"
+        previousClassName="page-item"
+        previousLinkClassName="page-link"
+        nextClassName="page-item"
+        nextLinkClassName="page-link"
+        breakLabel="..."
+        breakClassName="page-item"
+        breakLinkClassName="page-link"
+        containerClassName="pagination"
+        activeClassName="active"
+        renderOnZeroPageCount={null}
+      />
       </div>
+  
     </div>
   );
 }

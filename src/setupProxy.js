@@ -4,14 +4,14 @@ module.exports = function(app) {
   app.use(
     '/api',
     createProxyMiddleware({
-      target: 'http://localhost:5000',
+      target: 'https://atlasdb.onrender.com/',
       changeOrigin: true,
     })
   );
   app.use(
     '/payments',
     createProxyMiddleware({
-      target: 'http://localhost:5000',
+      target: 'https://atlasdb.onrender.com/',
       changeOrigin: true,
     })
   );

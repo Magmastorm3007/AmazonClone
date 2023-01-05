@@ -34,7 +34,7 @@ function Book({ id, title, image, price, rating,author,isbn }) {
       <div className="product__info">
         <p>Written by {author}</p>
         </div>
-        <p className="product__price">
+        <p className="product-price">
           <small>Rs.</small>
           <strong>{price}</strong>
         </p>
@@ -42,7 +42,7 @@ function Book({ id, title, image, price, rating,author,isbn }) {
           {Array(rating)
             .fill()
             .map((_, {rating}) => (
-              <p>⭐</p>
+              <p>⭐</p>   
             ))}
         </div>
         

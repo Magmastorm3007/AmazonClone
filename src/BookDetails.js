@@ -39,7 +39,7 @@ if(params.bookid==books.isbn)
 ).map(book=>
 <div class="row">
 <div className="col-6">
- <div className="card">
+ <div className="car">
           <Book
              isbn={book.isbn}
             id={book.id}
