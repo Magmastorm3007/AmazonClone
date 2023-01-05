@@ -5,21 +5,24 @@ import Header from './Header';
 import Checkout from './Checkout';
 import Login from './Login';
 import Order from './Order'
+import BookDetails from './BookDetails';
 import {
   BrowserRouter as Router,
   Routes,
   Route,
   Link,
 } from "react-router-dom";
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { auth } from './firebase';
 import { UseStateValue } from './stateProvider';
 import Payment from './Payment';
+import Admin from './Admin'
 import  {loadStripe} from "@stripe/stripe-js"
 import {Elements} from "@stripe/react-stripe-js"
+
 const promise=loadStripe('pk_test_51LEEGeSGbGUoxFPisnR9uswfjBIYnpoBDjn4GuanYp1p5Q5egXeeri6oHcN6N4h8rjdRXxLEW83eX0IEuAsEgCkg00lGOesFEZ')
 
-function App() {
+function App() {const [list,SetList]=useState('')
   const [{},dispatch]=UseStateValue();
   useEffect(()=>{
     auth.onAuthStateChanged(authUser=>{
@@ -46,13 +49,15 @@ function App() {
  <Router>
  
     <div className="App">
-      <Header/>
+      <Header list={list} SetList={SetList}/>
         <Routes>
         <Route path="/checkout" element={<Checkout/>} />
-    <Route path="/" element={<Home/>} />
+    <Route path="/" element={<Home list={list} SetList={SetList}/>} />
+    <Route exact path='/book/:bookid' element={<BookDetails />} />
     <Route path="/payment" element={<><Elements stripe={promise}><Payment/></Elements></>} />
     <Route path="/orders" element={<Order/>} />
     <Route path="/login" element={<Login/>} />
+    <Route path='/admin' element={<Admin/>}/>
 
    
         </Routes>

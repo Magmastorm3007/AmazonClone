@@ -14,7 +14,7 @@ import ModalHeader from "react-bootstrap/ModalHeader";
 import ModalFooter from "react-bootstrap/ModalFooter";
 import ModalTitle from "react-bootstrap/ModalTitle";
 
-import axios from './axios';
+import * as axios from 'axios'
 import { db } from "./firebase";
 
 function Payment() {
@@ -22,8 +22,7 @@ function Payment() {
     const showModal = () => {
     setIsOpen(true);
   };
-
-  const hideModal = () => {
+    const hideModal = () => {
     setIsOpen(false);
   };
 
@@ -33,7 +32,7 @@ function Payment() {
 
     const stripe = useStripe();
     const elements = useElements();
-
+    const[address,setAddress]=useState(true)
     const [succeeded, setSucceeded] = useState(false);
     const [processing, setProcessing] = useState("");
     const [error, setError] = useState(null);
@@ -43,24 +42,34 @@ function Payment() {
         return basket.reduce((price, item) => item.price + price, 0)
     }
     useEffect(() => {
-        // generate the special stripe secret which allows us to charge a customer
+       
         const getClientSecret = async () => {
+            
             const response = await axios({
                 method: 'post',
-                // Stripe expects the total in a currencies subunit
                 url: `/payments/create?total=${getBasketTotal(basket) * 100}`
+            }).then({
+                if(err){console.log(err)}
             });
+          
             setClientSecret(response.data.clientSecret)
+      
         }
 
         getClientSecret();
     }, [basket])
 
-    console.log('THE SECRET IS >>>', clientSecret)
+    console.log('secret is', clientSecret)
     console.log('👱', user)
 
+
+    const sub=(e)=>{
+        e.preventDefault()
+        setAddress(false)
+        
+    }
     const handleSubmit = async (event) => {
-        // do all the fancy stripe stuff...
+       
         event.preventDefault();
         setProcessing(true);
 
@@ -70,13 +79,26 @@ function Payment() {
             }
         }).then
         (({ paymentIntent }) => {
+          
+            const newpayment={
+                userid:user.email,
+                 basket:basket,
+                 amount:getBasketTotal(basket),
+                 created:new Date().toLocaleString() ,
+               
+               }
+               axios.post('/api/details',newpayment).then(
+                 console.log('success')
+               )
+            
             // paymentIntent = payment confirmation
 
           
             setSucceeded(true);
             setError(null)
             setProcessing(false)
-       
+           
+            
             history('/')
       
             dispatch({
@@ -86,14 +108,7 @@ function Payment() {
         })
 
        
-        (({ paymentIntent }) => {
-            db.collection('users').doc(user?.uid).collection('orders')
-            .set({
-                basket: basket,
-                amount: paymentIntent.amount,
-                created:paymentIntent.created
-            })
-        })
+   
 
     }
 
@@ -122,9 +137,30 @@ function Payment() {
                         <h3>Delivery Address</h3>
                     </div>
                     <div className='payment__address'>
-                        <p>{user?.email}</p>
-                        <p>123 React Lane</p>
-                        <p>Los Angeles, CA</p>
+                    <form action='/' onSubmit={sub}>
+  <div class="form-group">
+    <label for="formGroupExampleInput">Residential Address</label>
+    <input type="text" class="form-control"   required={true}  id="formGroupExampleInput"  placeholder="Enter Address"/>
+  </div>
+  <div class="form-group">
+    <label for="formGroupExampleInput2">City</label>
+    <input type="text" class="form-control"   required={true} id="formGroupExampleInput2" placeholder="Enter city"/>
+  </div>
+  <div class="form-group">
+    <label for="formGroupExampleInput2">State</label>
+    <input type="text" class="form-control"   required={true} id="formGroupExampleInput2" placeholder="Enter State/U.T"/>
+  </div>
+  <div class="form-group">
+    <label for="formGroupExampleInput2">Pincode</label>
+    <input type="text" class="form-control"  required={true} id="formGroupExampleInput2" placeholder="Pincode of your location"/>
+  </div>
+  <div class="form-group">
+    <label for="formGroupExampleInput2">Phone Number</label>
+    <input type="text" class="form-control" required={true} id="formGroupExampleInput2" placeholder="Enter your contact details"/>
+  </div> <div class="form-group">
+  <button type="submit">Confirm</button>
+  </div>
+</form>
                     </div>
                 </div>
 
@@ -167,10 +203,10 @@ function Payment() {
                                         value={getBasketTotal(basket)}
                                         displayType={"text"}
                                         thousandSeparator={true}
-                                        prefix={"$"}
+                                        prefix={"INR "}
                                     />
-                                    <button onClick={showModal} className='process' disabled={processing || disabled || succeeded}>
-                                        <span>{processing ? <p>Processing</p> : "Buy Now"} </span>  
+                                    <button onClick={showModal} className='process' disabled={processing || disabled || succeeded||error||address}>
+                                        <span>{processing ? "Processing" : "Purchase    "} </span>  
                                     
                                     </button>
                                 </div>
@@ -186,7 +222,7 @@ function Payment() {
         <Modal.Header>
           <Modal.Title>Payment Completed Successfully</Modal.Title>
         </Modal.Header>
-        <Modal.Body>Thanks for ordering on Amazon Clone</Modal.Body>
+        <Modal.Body>Thanks for ordering on Online Bookstore</Modal.Body>
        
       </Modal>
        
